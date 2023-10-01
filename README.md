@@ -1,8 +1,6 @@
 # awesomewm-definitions
 Lua Definitions for AwesomeWM
 
-EQEMU Lua Definitions 
-
 # Installation
 
 Create a folder in a global, generic path, for example: /src/lua-definitions
