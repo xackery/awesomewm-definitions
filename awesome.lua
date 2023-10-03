@@ -84,14 +84,7 @@ function awesome.emit_signal(name, ...) end
 ---@param stdout boolean Return a fd for stdout? (default false)
 ---@param stderr boolean Return a fd for stderr? (default false)
 ---@param exit_callback function Function to call on process exit. The function arguments will be type of exit (“exit” or “signal”) and the exit code / the signal number causing process termination. (default nil)
----@param cmd table The environment to use for the spawned program. Without this the spawned process inherits awesome’s environment. (default nil)
----@return integer Process ID if everything is OK.
----@return string Startup-notification ID, if use_sn is true.
----@return integer stdin, if stdin is true.
----@return integer stdout, if stdout is true.
----@return integer stderr, if stderr is true.
----@return string An error string if an error occurred.
-function awesome.spawn(cmd, use_sn, stdin, stdout, stderr, exit_callback, cmd) end
+function awesome.spawn(cmd, use_sn, stdin, stdout, stderr, exit_callback) end
 
 
 ---Spawn a program. The program will be started on the default screen.
